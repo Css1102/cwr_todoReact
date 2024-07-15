@@ -36,8 +36,8 @@ readOnly={!isTodoEditable}
 />
 {/* Delete button to remove todo entry using deleteTodo method. */}
 <button
-className='inline-flex w-20 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0
-disabled:opacity-50 overflow-visible'
+className='inline-flex w-20 h-8 rounded-lg text-sm border border-black/10 justify-center items-center  hover:bg-gray-100 shrink-0
+disabled:opacity-50 overflow-visible bg-blue-900'
 onClick={()=>{
   if(todo.completed) return
   if(!isTodoEditable){
@@ -51,7 +51,7 @@ disabled={todo.completed}
 >{isTodoEditable? "EDIT":"DONT EDIT"}</button>
 
 <button
-className='inline-flex w-16 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0'
+className='inline-flex w-16 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-red-700 hover:bg-gray-100 shrink-0'
 onClick={()=>deleteTodo(todo.id)}
 >DELETE</button>
 </div>
