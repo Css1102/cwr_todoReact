@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import {TodoProvider} from './context/Todo'
-import TodoForm from './component/TodoForm'
+import TodoForm from './component/TodoForm' 
 import TodoItem from './component/TodoItem'
 import { useTodo } from './context/Todo'
 function App() {
